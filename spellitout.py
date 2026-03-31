@@ -34,6 +34,7 @@ twos = [
 
 others = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
 
+
 if n <= 10:
     print(ones[n])
 elif n <= 20:
@@ -44,4 +45,7 @@ else:
 
     first = others[first - 2]
     second = ones[second]
-    print(f"{first}-{second}")
+    if second == "zero":
+        print(first)
+    else:
+        print(f"{first}-{second}")
